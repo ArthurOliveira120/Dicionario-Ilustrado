@@ -1,0 +1,24 @@
+:root {
+  /* Cor principal: verde natural, associada à biologia e vida */
+  --primary: #4CAF50;
+  --primary-text: #ffffff;
+  --primary-bg: #e8f5e9;
+
+  /* Cor secundária: marrom suave, remete à terra */
+  --secondary: #8D6E63;
+  --secondary-text: #ffffff;
+  --secondary-bg: #f3eae7;
+
+  /* Cor de destaque: azul claro, remete à ciência e clareza */
+  --accent: #03A9F4;
+  --accent-text: #ffffff;
+  --accent-bg: #e1f5fe;
+
+  /* Cor neutra: fundo e textos */
+  --background: #fdfdfd;
+  --text: #212121;
+
+  /* Suave contraste: para cartões e blocos */
+  --surface: #ffffff;
+  --surface-border: #e0e0e0;
+}

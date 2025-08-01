@@ -1,0 +1,13 @@
+.headerContainer {
+    font-size: 4rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.headerContainer p {
+    font-size: 1rem;
+}

@@ -1,5 +1,8 @@
-import { Main } from "../src/components/Main";
-import { Item } from "../src/components/Item";
+import "./styles/theme.css";
+import "./styles/global.css";
+
+import { Main } from "./components/Main";
+import { Item } from "./components/Item";
 import { BrowserRouter, Routes, Route } from 'react-router';
 
 function App() {

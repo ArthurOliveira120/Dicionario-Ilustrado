@@ -1,70 +1,217 @@
-# GitHub Codespaces ♥️ React
+# 🧬 Dicionário de Divisões Celulares
 
-Welcome to your shiny new Codespace running React! We've got everything fired up and running for you to explore React.
+Uma aplicação web interativa para estudar os termos essenciais das divisões celulares (mitose e meiose). Desenvolvida como material educativo para estudantes de Biologia.
 
-You've got a blank canvas to work on from a git perspective as well. There's a single initial commit with the what you're seeing right now - where you go from here is up to you!
+## 📋 Índice
 
-Everything you do here is contained within this one codespace. There is no repository on GitHub yet. If and when you’re ready you can click "Publish Branch" and we’ll create your repository and push up your project. If you were just exploring then and have no further need for this code then you can simply delete your codespace and it's gone forever.
+- [Sobre o Projeto](#sobre-o-projeto)
+- [Funcionalidades](#funcionalidades)
+- [Tecnologias](#tecnologias)
+- [Estrutura do Projeto](#estrutura-do-projeto)
+- [Como Executar](#como-executar)
+- [Termos Incluídos](#termos-incluídos)
+- [Contribuição](#contribuição)
+- [Licença](#licença)
 
-This project was bootstrapped for you with [Vite](https://vitejs.dev/).
+## 🎯 Sobre o Projeto
 
-## Available Scripts
+Este projeto consiste em um dicionário digital ilustrado que aborda os principais conceitos relacionados às divisões celulares. A aplicação foi desenvolvida para auxiliar estudantes na compreensão dos processos de mitose e meiose, apresentando definições claras, características e ilustrações de cada termo.
 
-In the project directory, you can run:
+### Objetivos Educacionais
 
-### `npm start`
+- Facilitar o aprendizado dos conceitos de divisões celulares
+- Fornecer definições precisas e acessíveis
+- Criar uma experiência interativa de estudo
+- Servir como material de referência para consultas
 
-We've already run this for you in the `Codespaces: server` terminal window below. If you need to stop the server for any reason you can just run `npm start` again to bring it back online.
+## ⚡ Funcionalidades
 
-Runs the app in the development mode.\
-Open [http://localhost:3000/](http://localhost:3000/) in the built-in Simple Browser (`Cmd/Ctrl + Shift + P > Simple Browser: Show`) to view your running application.
+- **Navegação Intuitiva**: Interface limpa e organizada
+- **Conteúdo Detalhado**: Definições completas com características principais
+- **Busca por Termos**: Acesso direto a cada conceito
+- **Design Responsivo**: Adaptável a diferentes dispositivos
+- **Material de Referência**: Dicionário completo para download
 
-The page will reload automatically when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Tecnologias
 
-### `npm test`
+- **Frontend**: React.js
+- **Roteamento**: React Router DOM
+- **Estilização**: CSS3 / Styled Components
+- **Build**: Create React App / Vite
+- **Deploy**: Netlify / Vercel
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📁 Estrutura do Projeto
 
-### `npm run build`
+```
+divisoes-celulares/
+├── public/
+│   ├── images/
+│   │   ├── mitose.png
+│   │   ├── meiose.png
+│   │   └── ...
+│   └── index.html
+├── src/
+│   ├── components/
+│   │   ├── Main.jsx
+│   │   ├── Item.jsx
+│   │   └── Navigation.jsx
+│   ├── styles/
+│   │   ├── global.css
+│   │   └── components.css
+│   ├── data/
+│   │   └── termos.js
+│   ├── App.jsx
+│   └── index.js
+├── docs/
+│   └── dicionario-completo.md
+├── package.json
+└── README.md
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Como Executar
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Pré-requisitos
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Node.js (versão 14 ou superior)
+- npm ou yarn
 
-## Learn More
+### Instalação
 
-You can learn more in the [Vite documentation](https://vitejs.dev/guide/).
+1. Clone o repositório:
+```bash
+git clone https://github.com/seu-usuario/divisoes-celulares.git
+cd divisoes-celulares
+```
 
-To learn Vitest, a Vite-native testing framework, go to [Vitest documentation](https://vitest.dev/guide/)
+2. Instale as dependências:
+```bash
+npm install
+# ou
+yarn install
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. Execute o projeto:
+```bash
+npm start
+# ou
+yarn start
+```
 
-### Code Splitting
+4. Acesse no navegador:
+```
+http://localhost:3000
+```
 
-This section has moved here: [https://sambitsahoo.com/blog/vite-code-splitting-that-works.html](https://sambitsahoo.com/blog/vite-code-splitting-that-works.html)
+### Build para Produção
 
-### Analyzing the Bundle Size
+```bash
+npm run build
+# ou
+yarn build
+```
 
-This section has moved here: [https://github.com/btd/rollup-plugin-visualizer#rollup-plugin-visualizer](https://github.com/btd/rollup-plugin-visualizer#rollup-plugin-visualizer)
+## 📚 Termos Incluídos
 
-### Making a Progressive Web App
+A aplicação aborda os seguintes conceitos essenciais:
 
-This section has moved here: [https://dev.to/hamdankhan364/simplifying-progressive-web-app-pwa-development-with-vite-a-beginners-guide-38cf](https://dev.to/hamdankhan364/simplifying-progressive-web-app-pwa-development-with-vite-a-beginners-guide-38cf)
+### Processos de Divisão
+- **Mitose** - Divisão celular para crescimento e reparação
+- **Meiose** - Divisão reducional para formação de gametas
 
-### Advanced Configuration
+### Estruturas Celulares
+- **Carioteca** - Membrana nuclear
+- **Cromatina** - DNA descondensado no núcleo
+- **Cromossomo** - DNA condensado durante a divisão
+- **Cromossomos Homólogos** - Pares de cromossomos similares
+- **Cromátide** - Estrutura que compõe o cromossomo
+- **Cromátides Irmãs** - Cromátides idênticas unidas pelo centrômero
 
-This section has moved here: [https://vitejs.dev/guide/build.html#advanced-base-options](https://vitejs.dev/guide/build.html#advanced-base-options)
+### Estruturas da Divisão
+- **Centrômero** - Região de constrição do cromossomo
+- **Centrossomo** - Organizador de microtúbulos
+- **Fuso Mitótico/Meiótico** - Estrutura que move cromossomos
 
-### Deployment
+### Fases da Divisão
+- **Prófase** - Condensação cromossômica
+- **Metáfase** - Alinhamento dos cromossomos
+- **Anáfase** - Separação dos cromossomos
+- **Telófase** - Reconstituição nuclear
+- **Citocinese** - Divisão do citoplasma
 
-This section has moved here: [https://vitejs.dev/guide/build.html](https://vitejs.dev/guide/build.html)
+## 🗺️ Rotas da Aplicação
 
-### Troubleshooting
+```jsx
+/                           # Página inicial
+/mitose                     # Mitose
+/meiose                     # Meiose
+/carioteca                  # Carioteca
+/cromatina                  # Cromatina
+/cromossomo                 # Cromossomo
+/cromossomos-homologos      # Cromossomos Homólogos
+/cromatide                  # Cromátide
+/cromatides-irmas           # Cromátides Irmãs
+/centromero                 # Centrômero
+/centrossomo                # Centrossomo
+/fuso-mitotico-meiotico     # Fuso Mitótico ou Meiótico
+/profase                    # Prófase
+/metafase                   # Metáfase
+/anafase                    # Anáfase
+/telofase                   # Telófase
+/citocinese                 # Citocinese
+```
 
-This section has moved here: [https://vitejs.dev/guide/troubleshooting.html](https://vitejs.dev/guide/troubleshooting.html)
+## 📖 Uso Educacional
+
+### Para Estudantes
+- Consulte os termos durante o estudo
+- Use como material de revisão antes de provas
+- Acesse definições rápidas durante aulas
+
+### Para Professores
+- Material complementar para aulas
+- Referência para elaboração de atividades
+- Recurso visual para explicações
+
+## 🤝 Contribuição
+
+Contribuições são bem-vindas! Para contribuir:
+
+1. Faça um fork do projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/nova-funcionalidade`)
+3. Commit suas mudanças (`git commit -m 'Adiciona nova funcionalidade'`)
+4. Push para a branch (`git push origin feature/nova-funcionalidade`)
+5. Abra um Pull Request
+
+### Tipos de Contribuição
+
+- 🐛 Correção de bugs
+- ✨ Novas funcionalidades
+- 📝 Melhorias na documentação
+- 🎨 Melhorias de design
+- 🔧 Otimizações de performance
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## 👥 Autores
+
+- **Seu Nome** - *Desenvolvimento inicial* - [@seu-usuario](https://github.com/seu-usuario)
+
+## 🙏 Agradecimentos
+
+- Professores de Biologia pela orientação educacional
+- Comunidade open source pelas ferramentas utilizadas
+- Colegas de estudo pelas sugestões e feedback
+
+## 📞 Contato
+
+- **Email**: seu.email@exemplo.com
+- **LinkedIn**: [Seu Perfil](https://linkedin.com/in/seu-perfil)
+- **GitHub**: [@seu-usuario](https://github.com/seu-usuario)
+
+---
+
+**Feito com ❤️ para a educação em Biologia**
+
+> "A educação é a arma mais poderosa que você pode usar para mudar o mundo." - Nelson Mandela
