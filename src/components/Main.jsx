@@ -2,9 +2,12 @@ import styles from "./Main.module.css";
 
 import { Header } from "./Header";
 
-import { Link } from "react-router";
-export function Main({ title, description, img }) {
+import reco from '../assets/reco.jpg';
+import joao from '../assets/joao.jpg';
+import yurai from '../assets/yurai.jpg';
 
+import { Link } from "react-router";
+export function Main() {
     const termosCompletos = [
         { path: "/mitose", nome: "Mitose" },
         { path: "/meiose", nome: "Meiose" },
@@ -42,19 +45,19 @@ export function Main({ title, description, img }) {
                 <footer className={styles.footerAlunos}>
                     <div className={styles.aluno}>
                         <div className={styles.imgContainer}>
-                            <img src="src/assets/reco.jpg"></img>
+                            <img src={reco}></img>
                         </div>
                         <h4>Arthur Oliveira Marinho</h4>
                     </div>
                     <div className={styles.aluno}>
                         <div className={styles.imgContainer}>
-                            <img src="src/assets/joao.jpg"></img>
+                            <img src={joao}></img>
                         </div>
                         <h4>Joao maria de lima pereira neto</h4>
                     </div>
                     <div className={styles.aluno}>
                         <div className={styles.imgContainer}>
-                            <img src="src/assets/yurai.jpg"></img>
+                            <img src={yurai}></img>
                         </div>
                         <h4>Yuri Santos Gonçalves</h4>
                     </div>
